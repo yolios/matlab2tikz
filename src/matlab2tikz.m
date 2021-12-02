@@ -5622,6 +5622,7 @@ function [m2t, table, opts] = makeTable(m2t, varargin)
     else
         ROWSEP = sprintf('\\\\\n');
         opts = opts_add(opts, 'row sep','crcr');
+        opts = opts_add(opts, 'col sep','tab');
     end
 
     nColumns = numel(data);
